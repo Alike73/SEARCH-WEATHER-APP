@@ -1,6 +1,6 @@
 # WEATHER-TODAY: Weather search App.
 
-[Live Demo](https://gilded-bavarois-ce9ea9.netlify.app/) | [GitHub Repository](https://github.com/Alike73/WEATHER-TODAY)
+[Live Demo](https://rainbow-platypus-ccf3ce.netlify.app/) | [GitHub Repository](https://github.com/Alike73/WEATHER-TODAY)
 
 <img src="./src/Assets/thunderstorm-icon.png" alt="Thunderstorm" width="150" />
 
