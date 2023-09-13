@@ -1,0 +1,118 @@
+
+
+#clock {
+    position: relative;
+    grid-area: content;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: double 10px #39454b;
+    /* background: linear-gradient(-45deg, #39454b 20%, #101017); */
+    background: linear-gradient(-45deg, #230f36 20%, #a178f6);
+    box-shadow: 15px 15px 5px #919ea5;
+}
+
+.dial {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: dotted 1px #101017;
+    background: var(--color-red);
+    z-index: 3;
+}
+
+/* Clock hands */
+.hand {
+    position: absolute;
+    transform-origin: 0px center;
+    /* Fix aliasing caused by transform: rotate() */
+    outline: 1px solid transparent;
+}
+
+#hour-hand {
+    /* center hand */
+    top: calc(50% - 4px);
+    left: 50%;
+    width: 80px;
+    height: 4px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: var(--color-light-blue);
+    z-index: 1;
+}
+
+#minute-hand {
+    /* center hand */
+    top: calc(50% - 4px);
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: var(--color-light-blue);
+    z-index: 2;
+}
+
+#second-hand {
+    /* center hand */
+    top: calc(50% - 1px);
+    left: 35px;
+    width: 170px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--color-red);
+    transform-origin: 70px center;
+    z-index: 4;
+}
+
+#second-hand .ring {
+    width: 12px;
+    height: 10px;
+    margin-top: -4px;
+    margin-left: 15px;
+    background: transparent;
+    border: 2px solid var(--color-red);
+    border-radius: 50%;
+    z-index: 11;
+}
+
+/* Long form text displays */
+.display-text li {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#time-display {
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 90px);
+    min-width: 150px;
+    margin: 0;
+    text-align: center;
+    transition: 1s ease-in;
+}
+
+#time-display li {
+    display: block;
+}
+
+#calendar-display {
+    position: absolute;
+    top: 75%;
+    left: calc(50% - 90px);
+    min-width: 150px;
+    margin: 0;
+    text-align: center;
+}
+
+#calendar-display li {
+    display: inline-block;
+}

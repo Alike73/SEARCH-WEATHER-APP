@@ -1,0 +1,73 @@
+
+.footerText {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-label);
+    font-size: var(--length-sm3);
+    font-weight: 400;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bi-heart-fill {
+    display: inline-block;
+    background: var(--color-red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: var(--text-shadow);
+    animation: pulse 1s infinite;
+}
+
+.backwards-arrow {
+    position: relative;
+}
+
+.backwards-arrow::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 8px; /* Adjust this value to position the arrow correctly */
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid var(--color-label);
+    border-bottom: 1px solid var(--color-label);
+    transform: rotate(45deg);
+}
+.backwards-arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -19%;
+    left: 8px; /* Adjust this value to position the arrow correctly */
+    width: 100%;
+    height: var(--length-md2);
+    border-bottom: 1px solid var(--color-label);
+    border-right: 1px solid var(--color-label);
+    border-bottom-right-radius: var(--length-md1);
+}
+
+
+@keyframes smile-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.bi-emoji-smile-upside-down {
+    display: inline-flex;
+    animation: smile-spin infinite 20s linear;
+}
+
