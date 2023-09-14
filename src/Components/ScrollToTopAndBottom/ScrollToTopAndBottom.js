@@ -20,26 +20,9 @@ const ScrollToTopAndBottom = () => {
             behavior: "smooth",
         });
     };
-    // const scrollToBottom = () => {
-    //     window.scrollTo({
-    //         top: document.documentElement.scrollHeight,
-    //         behavior: 'smooth',
-    //     });
-    // };
+    
     return (
         <div>
-            <div className="top-to-btn">
-                {" "}
-                {showTopBtn && (
-                    <span 
-                    className="icon-position2 icon-style d-flex justify-content-center align-items-center" 
-                    data-bs-toggle="modal" data-bs-target="#newsModal"
-                    >
-                        <i className="bi bi-newspaper"></i>
-                    </span>
-                )}{" "}
-            </div>
-
             <div className="top-to-btn">
                 {" "}
                 {showTopBtn && (
